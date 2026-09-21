@@ -29,13 +29,13 @@ Put PNG icons in `icons/` (256px is plenty). No HTML or CSS changes needed.
 
 ## Deploy on GitHub Pages
 
-1. Create an empty public repo named exactly `ckopp22.github.io`.
-2. Push this repo:
+1. Push this repo to https://github.com/ckopp22/Kopp-Studio-Website:
    ```sh
-   git remote add origin https://github.com/ckopp22/ckopp22.github.io.git
    git push -u origin main
    ```
-3. On GitHub: Settings → Pages → Source: "Deploy from a branch" → `main` / `/ (root)`.
-4. The site goes live at https://ckopp22.github.io/ within a minute or two.
+2. On GitHub: Settings → Pages → Source: "Deploy from a branch" → `main` / `/ (root)`.
+3. The site goes live at https://ckopp22.github.io/Kopp-Studio-Website/ within a minute or two.
 
 To update later: edit, `git commit`, `git push`.
+
+Paths are all relative, so the site works the same from a sub-path like this. To serve it at the root URL instead, rename the repo to `ckopp22.github.io`.
