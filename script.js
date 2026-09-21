@@ -23,6 +23,13 @@ const apps = [
     linkLabel: "Play Now"
   },
   {
+    name: "Lighthouse",
+    iconImage: "icons/lighthouse.png",
+    description: "A push-your-luck dice game for a group sharing one device. Bank your points, but dodge the Lighthouse faces that can wipe you out.",
+    url: "https://ckopp22.github.io/Lighthouse/",
+    linkLabel: "Play Now"
+  },
+  {
     name: "Health Log",
     iconImage: "icons/health-log.png",
     description: "A private daily health journal for weight, food, habits and workouts, with zero setup.",
