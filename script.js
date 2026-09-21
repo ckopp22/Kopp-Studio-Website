@@ -28,21 +28,6 @@ const apps = [
     description: "Three new challenges every day, made to push you outside your routine. Build a streak and level up.",
     url: "https://apps.apple.com/us/app/challenge-accepted-3-daily/id6805973885",
     linkLabel: "Get the App"
-  },
-  // Placeholders: replace or delete these.
-  {
-    name: "Placeholder App",
-    icon: "📱",
-    description: "Placeholder. Replace this with a real app description.",
-    url: "#",
-    linkLabel: "Get the App"
-  },
-  {
-    name: "Placeholder Game",
-    icon: "🎮",
-    description: "Placeholder. Replace this with a real game description.",
-    url: "#",
-    linkLabel: "Play Now"
   }
 ];
 
