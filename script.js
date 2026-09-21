@@ -16,6 +16,13 @@ const apps = [
     linkLabel: "Play Now"
   },
   {
+    name: "Herd Mentality",
+    iconImage: "icons/herd-mentality.png",
+    description: "A cow-themed party game. Shout your answer at the same time, and score Cow Coins for matching the herd.",
+    url: "https://ckopp22.github.io/Herd-Mentality/",
+    linkLabel: "Play Now"
+  },
+  {
     name: "Health Log",
     iconImage: "icons/health-log.png",
     description: "A private daily health journal for weight, food, habits and workouts, with zero setup.",
