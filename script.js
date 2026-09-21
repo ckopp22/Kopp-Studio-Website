@@ -80,3 +80,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const grid = document.getElementById("app-grid");
   apps.forEach(app => grid.appendChild(createCard(app)));
 });
+
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("service-worker.js").catch(() => {});
+  });
+}

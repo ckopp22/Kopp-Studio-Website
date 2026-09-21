@@ -27,6 +27,12 @@ Edit the `apps` array at the top of `script.js` and add an object:
 
 Put PNG icons in `icons/` (256px is plenty). No HTML or CSS changes needed.
 
+## Install as an app (PWA)
+
+The site is installable: `manifest.json` + `service-worker.js` + the icons in `icons/`. On iPhone use Share → Add to Home Screen; on Android/desktop Chrome use the install prompt. It works offline once visited, and online visitors always get the latest files (network-first). The service worker only runs over http(s), not `file://`.
+
+The "Kopp" icon is `icons/icon-512.png` (other sizes are downscaled copies). If you add new files that should work offline, list them in `ASSETS` in `service-worker.js`.
+
 ## Deploy on GitHub Pages
 
 1. Push this repo to https://github.com/ckopp22/Kopp-Studio-Website:
