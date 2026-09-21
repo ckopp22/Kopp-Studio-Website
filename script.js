@@ -11,7 +11,7 @@ const apps = [
   {
     name: "Hard Words",
     iconImage: "icons/hard-words.png",
-    description: "A fast, silly party game for a group in one room. Describe the picture without saying the obvious clues.",
+    description: "A fast, silly party game for a group in one room. Be the fastest to shout a word that starts with the first letter of the image.",
     url: "https://ckopp22.github.io/Hard-Words/",
     linkLabel: "Play Now"
   },
@@ -26,7 +26,7 @@ const apps = [
     name: "Challenge Accepted",
     iconImage: "icons/challenge-accepted.png",
     description: "Three new challenges every day, made to push you outside your routine. Build a streak and level up.",
-    url: "#",
+    url: "https://apps.apple.com/us/app/challenge-accepted-3-daily/id6805973885",
     linkLabel: "Get the App"
   },
   // Placeholders: replace or delete these.
