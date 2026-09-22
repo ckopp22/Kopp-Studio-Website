@@ -30,10 +30,10 @@ const apps = [
     linkLabel: "Play Now"
   },
   {
-    name: "Health Log",
+    name: "Simple Health Log App",
     iconImage: "icons/health-log.png",
     description: "A private daily health journal for weight, food, habits and workouts, with zero setup.",
-    url: "#",
+    url: "https://apps.apple.com/us/app/simple-health-log-app/id6811933427",
     linkLabel: "Get the App"
   },
   {
