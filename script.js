@@ -9,6 +9,13 @@
 //   linkLabel   Button text, e.g. "Play Now", "Get the App"
 const apps = [
   {
+    name: "Turtle Tides",
+    iconImage: "icons/turtle-tides.png",
+    description: "Guide a little sea turtle along the shore, from the beach to the open water, as the tides roll in and out.",
+    url: "https://ckopp22.github.io/Turtle-Tides/",
+    linkLabel: "Play Now"
+  },
+  {
     name: "Hard Words",
     iconImage: "icons/hard-words.png",
     description: "A fast, silly party game for a group in one room. Be the fastest to shout a word that starts with the first letter of the image.",
@@ -49,13 +56,6 @@ const apps = [
     description: "A conversation starter for groups, families, couples and friends. Tap through 15+ decks of questions, or write your own, all offline.",
     url: "https://apps.apple.com/us/app/one-more-question/id6816315190",
     linkLabel: "Get the App"
-  },
-  {
-    name: "Turtle Tides",
-    iconImage: "icons/turtle-tides.png",
-    description: "Guide a little sea turtle along the shore, from the beach to the open water, as the tides roll in and out.",
-    url: "https://ckopp22.github.io/Turtle-Tides/",
-    linkLabel: "Play Now"
   }
 ];
 
