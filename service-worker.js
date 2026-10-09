@@ -1,6 +1,6 @@
 // Network-first: online visitors always get the latest files; the cache is
 // only the offline fallback. Bump CACHE if you ever need to force a reset.
-const CACHE = "kopp-studio-v5";
+const CACHE = "kopp-studio-v6";
 const ASSETS = [
   "./",
   "index.html",
@@ -14,6 +14,7 @@ const ASSETS = [
   "icons/challenge-accepted.png",
   "icons/one-more-question.png",
   "icons/turtle-tides.png",
+  "icons/fact-or-fake.png",
   "icons/icon-192.png",
   "icons/icon-512.png",
   "icons/apple-touch-icon.png",

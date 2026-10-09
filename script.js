@@ -9,6 +9,13 @@
 //   linkLabel   Button text, e.g. "Play Now", "Get the App"
 const apps = [
   {
+    name: "Fact or Fake",
+    iconImage: "icons/fact-or-fake.png",
+    description: "A pass-and-play party game of surprising truths and convincing lies. Can you spot the fact from the fake?",
+    url: "https://ckopp22.github.io/Fact-or-Fake/",
+    linkLabel: "Play Now"
+  },
+  {
     name: "Turtle Tides",
     iconImage: "icons/turtle-tides.png",
     description: "Guide a little sea turtle along the shore, from the beach to the open water, as the tides roll in and out.",
