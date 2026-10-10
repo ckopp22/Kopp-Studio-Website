@@ -165,8 +165,19 @@ main {
   transition: background 0.2s ease;
 }
 
-.card:hover .btn,
-.card:focus-visible .btn { background: var(--accent-hover); }
+.chevron {
+  flex: none;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--muted);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.card:hover .chevron,
+.card:focus-visible .chevron {
+  color: var(--accent);
+  transform: translateX(3px);
+}
 
 .card:focus-visible {
   outline: 3px solid var(--accent);

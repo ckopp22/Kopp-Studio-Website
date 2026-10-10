@@ -99,8 +99,14 @@ function createCard(app) {
   desc.textContent = app.description;
 
   const btn = document.createElement("span");
-  btn.className = live ? "btn" : "btn disabled";
-  btn.textContent = live ? (app.linkLabel || "Open") : "Coming Soon";
+  if (live) {
+    btn.className = "chevron";
+    btn.setAttribute("aria-hidden", "true");
+    btn.textContent = "\u203A";
+  } else {
+    btn.className = "btn disabled";
+    btn.textContent = "Coming Soon";
+  }
 
   const body = document.createElement("div");
   body.className = "card-body";
