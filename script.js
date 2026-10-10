@@ -18,7 +18,7 @@ const apps = [
   {
     name: "Turtle Tides",
     iconImage: "icons/turtle-tides.png",
-    description: "Guide a little sea turtle along the shore, from the beach to the open water, as the tides roll in and out.",
+    description: "Guide a little sea turtle into an adventure! (Created by Wesley)",
     url: "https://ckopp22.github.io/Turtle-Tides/",
     linkLabel: "Play Now"
   },
