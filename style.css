@@ -83,7 +83,7 @@ main {
 
 .card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   position: relative;
   isolation: isolate;
@@ -135,10 +135,8 @@ main {
 }
 
 .card-body {
+  flex: 1;
   min-width: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .card-name {
@@ -147,13 +145,15 @@ main {
 }
 
 .card-desc {
-  margin: 0 0 0.75rem;
+  margin: 0;
   color: var(--muted);
   font-size: 0.9rem;
   line-height: 1.4;
 }
 
 .btn {
+  flex: none;
+  white-space: nowrap;
   display: inline-block;
   padding: 0.4rem 1rem;
   font-size: 0.9rem;
@@ -183,4 +183,8 @@ main {
 .noscript {
   text-align: center;
   color: var(--muted);
+}
+
+@media (max-width: 480px) {
+  .btn { padding: 0.35rem 0.8rem; font-size: 0.8rem; }
 }

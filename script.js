@@ -104,9 +104,9 @@ function createCard(app) {
 
   const body = document.createElement("div");
   body.className = "card-body";
-  body.append(name, desc, btn);
+  body.append(name, desc);
 
-  card.append(icon, body);
+  card.append(icon, body, btn);
   return card;
 }
 
