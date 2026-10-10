@@ -67,8 +67,15 @@ const apps = [
 ];
 
 function createCard(app) {
-  const card = document.createElement("article");
+  const live = app.url && app.url !== "#";
+  const card = document.createElement(live ? "a" : "article");
   card.className = "card";
+  if (live) {
+    card.href = app.url;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
+    card.setAttribute("aria-label", (app.linkLabel || "Open") + " " + app.name);
+  }
 
   const icon = document.createElement("div");
   icon.className = "card-icon";
@@ -91,23 +98,15 @@ function createCard(app) {
   desc.className = "card-desc";
   desc.textContent = app.description;
 
-  let btn;
-  if (!app.url || app.url === "#") {
-    btn = document.createElement("span");
-    btn.className = "btn disabled";
-    btn.textContent = "Coming Soon";
-    btn.setAttribute("aria-disabled", "true");
-  } else {
-    btn = document.createElement("a");
-    btn.className = "btn";
-    btn.href = app.url;
-    btn.target = "_blank";
-    btn.rel = "noopener noreferrer";
-    btn.textContent = app.linkLabel || "Open";
-    btn.setAttribute("aria-label", (app.linkLabel || "Open") + " " + app.name);
-  }
+  const btn = document.createElement("span");
+  btn.className = live ? "btn" : "btn disabled";
+  btn.textContent = live ? (app.linkLabel || "Open") : "Coming Soon";
 
-  card.append(icon, name, desc, btn);
+  const body = document.createElement("div");
+  body.className = "card-body";
+  body.append(name, desc, btn);
+
+  card.append(icon, body);
   return card;
 }
 
