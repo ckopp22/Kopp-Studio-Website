@@ -74,11 +74,40 @@ main {
 }
 
 /* Keep a lone card from stretching across the whole page. */
-.app-grid > .card:only-child {
+.app-grid > .card-row:only-child {
   grid-column: 1 / -1;
   max-width: 480px;
   width: 100%;
   justify-self: center;
+}
+
+.card-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-row .card { flex: 1; min-width: 0; }
+
+.card-row.dragging { opacity: 0.6; }
+
+.drag-handle {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 0.75rem 0.4rem;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.drag-handle span {
+  width: 18px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--muted);
 }
 
 .card {

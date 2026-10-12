@@ -123,9 +123,70 @@ function createCard(app) {
   return card;
 }
 
+const ORDER_KEY = "app-order";
+
+function loadOrder() {
+  try { return JSON.parse(localStorage.getItem(ORDER_KEY)) || []; } catch (e) { return []; }
+}
+
+function saveOrder(grid) {
+  const names = [...grid.children].map(r => r.dataset.name);
+  try { localStorage.setItem(ORDER_KEY, JSON.stringify(names)); } catch (e) {}
+}
+
+function createRow(app) {
+  const row = document.createElement("div");
+  row.className = "card-row";
+  row.dataset.name = app.name;
+
+  const handle = document.createElement("div");
+  handle.className = "drag-handle";
+  handle.setAttribute("aria-hidden", "true");
+  handle.title = "Drag to reorder";
+  handle.innerHTML = "<span></span><span></span><span></span>";
+
+  row.append(handle, createCard(app));
+  return row;
+}
+
+function enableDrag(grid) {
+  let dragging = null;
+
+  grid.addEventListener("pointerdown", e => {
+    const handle = e.target.closest(".drag-handle");
+    if (!handle) return;
+    dragging = handle.parentElement;
+    dragging.classList.add("dragging");
+    handle.setPointerCapture(e.pointerId);
+    e.preventDefault();
+  });
+
+  grid.addEventListener("pointermove", e => {
+    if (!dragging) return;
+    const over = document.elementFromPoint(e.clientX, e.clientY);
+    const target = over && over.closest(".card-row");
+    if (!target || target === dragging || target.parentElement !== grid) return;
+    const rows = [...grid.children];
+    const before = rows.indexOf(dragging) > rows.indexOf(target);
+    grid.insertBefore(dragging, before ? target : target.nextSibling);
+  });
+
+  const end = () => {
+    if (!dragging) return;
+    dragging.classList.remove("dragging");
+    dragging = null;
+    saveOrder(grid);
+  };
+  grid.addEventListener("pointerup", end);
+  grid.addEventListener("pointercancel", end);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.getElementById("app-grid");
-  apps.forEach(app => grid.appendChild(createCard(app)));
+  const saved = loadOrder();
+  const rank = a => { const i = saved.indexOf(a.name); return i === -1 ? saved.length : i; };
+  [...apps].sort((a, b) => rank(a) - rank(b)).forEach(app => grid.appendChild(createRow(app)));
+  enableDrag(grid);
 });
 
 if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
