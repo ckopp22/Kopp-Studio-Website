@@ -151,11 +151,23 @@ function createRow(app) {
 
 function enableDrag(grid) {
   let dragging = null;
+  let ghost = null;
+  let offX = 0;
+  let offY = 0;
 
   grid.addEventListener("pointerdown", e => {
     const handle = e.target.closest(".drag-handle");
     if (!handle) return;
     dragging = handle.parentElement;
+    const r = dragging.getBoundingClientRect();
+    offX = e.clientX - r.left;
+    offY = e.clientY - r.top;
+    ghost = dragging.cloneNode(true);
+    ghost.className = "card-row drag-ghost";
+    ghost.style.width = r.width + "px";
+    ghost.style.left = r.left + "px";
+    ghost.style.top = r.top + "px";
+    document.body.appendChild(ghost);
     dragging.classList.add("dragging");
     handle.setPointerCapture(e.pointerId);
     e.preventDefault();
@@ -163,6 +175,8 @@ function enableDrag(grid) {
 
   grid.addEventListener("pointermove", e => {
     if (!dragging) return;
+    ghost.style.left = e.clientX - offX + "px";
+    ghost.style.top = e.clientY - offY + "px";
     const over = document.elementFromPoint(e.clientX, e.clientY);
     const target = over && over.closest(".card-row");
     if (!target || target === dragging || target.parentElement !== grid) return;
@@ -174,7 +188,8 @@ function enableDrag(grid) {
   const end = () => {
     if (!dragging) return;
     dragging.classList.remove("dragging");
-    dragging = null;
+    ghost.remove();
+    dragging = ghost = null;
     saveOrder(grid);
   };
   grid.addEventListener("pointerup", end);
