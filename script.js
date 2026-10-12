@@ -44,6 +44,13 @@ const apps = [
     linkLabel: "Play Now"
   },
   {
+    name: "CADAN",
+    iconImage: "icons/cadan.png",
+    description: "A dice strategy game. Roll, keep and re-roll, then spend your dice to build roads, settlements, cities and knights. Highest score after 15 turns wins.",
+    url: "https://ckopp22.github.io/CADAN/",
+    linkLabel: "Play Now"
+  },
+  {
     name: "Simple Health Log App",
     iconImage: "icons/health-log.png",
     description: "A private daily health journal for weight, food, habits and workouts, with zero setup.",
