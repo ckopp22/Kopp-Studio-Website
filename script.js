@@ -77,6 +77,13 @@ const apps = [
     description: "Design a screen, hit Publish, and show it on any TV or projector.",
     url: "https://ckopp22.github.io/BBC110/",
     linkLabel: "Open"
+  },
+  {
+    name: "Brain Freeze",
+    iconImage: "icons/brain-freeze.png",
+    description: "A party game show about things you should know, but your brain just froze.",
+    url: "https://ckopp22.github.io/Brain-Freeze/",
+    linkLabel: "Play Now"
   }
 ];
 
