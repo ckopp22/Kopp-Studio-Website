@@ -84,6 +84,13 @@ const apps = [
     description: "A party game show about things you should know, but your brain just froze.",
     url: "https://ckopp22.github.io/Brain-Freeze/",
     linkLabel: "Play Now"
+  },
+  {
+    name: "Worship Tiles",
+    iconImage: "icons/worship-tiles.png",
+    description: "A rhythm tile game: tap in time with the notes, chase high scores, and unlock new songs.",
+    url: "https://ckopp22.github.io/Worship-Tiles/",
+    linkLabel: "Play Now"
   }
 ];
 
