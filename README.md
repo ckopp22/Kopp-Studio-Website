@@ -1,4 +1,4 @@
-# Kopp Studio
+# Kopp Studios
 
 A single-page site listing my apps and games. Plain HTML/CSS/JS, no build step.
 
