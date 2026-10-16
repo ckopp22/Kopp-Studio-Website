@@ -11,84 +11,84 @@ const apps = [
   {
     name: "Fact or Fake",
     iconImage: "icons/fact-or-fake.png",
-    description: "A pass-and-play party game of surprising truths and convincing lies. Can you spot the fact from the fake?",
+    description: "A party game of truths and lies.",
     url: "https://ckopp22.github.io/Fact-or-Fake/",
     linkLabel: "Play Now"
   },
   {
     name: "Turtle Tides",
     iconImage: "icons/turtle-tides.png",
-    description: "Guide a little sea turtle into an adventure! (Created by Wesley)",
+    description: "Guide a little sea turtle on an adventure. (Created by Wesley)",
     url: "https://ckopp22.github.io/Turtle-Tides/",
     linkLabel: "Play Now"
   },
   {
     name: "Hard Words",
     iconImage: "icons/hard-words.png",
-    description: "A fast, silly party game for a group in one room. Be the fastest to shout a word that starts with the first letter of the image.",
+    description: "A fast party game of shouting words.",
     url: "https://ckopp22.github.io/Hard-Words/",
     linkLabel: "Play Now"
   },
   {
     name: "Herd Mentality",
     iconImage: "icons/herd-mentality.png",
-    description: "A cow-themed party game. Shout your answer at the same time, and score Cow Coins for matching the herd.",
+    description: "A cow-themed party game. Match the herd.",
     url: "https://ckopp22.github.io/Herd-Mentality/",
     linkLabel: "Play Now"
   },
   {
     name: "Lighthouse",
     iconImage: "icons/lighthouse.png",
-    description: "A push-your-luck dice game for a group sharing one device. Bank your points, but dodge the Lighthouse faces that can wipe you out.",
+    description: "A push-your-luck dice game.",
     url: "https://ckopp22.github.io/Lighthouse/",
     linkLabel: "Play Now"
   },
   {
     name: "CADAN",
     iconImage: "icons/cadan.png",
-    description: "A dice strategy game. Roll, keep and re-roll, then spend your dice to build roads, settlements, cities and knights. Highest score after 15 turns wins.",
+    description: "A dice strategy game.",
     url: "https://ckopp22.github.io/CADAN/",
     linkLabel: "Play Now"
   },
   {
     name: "Simple Health Log App",
     iconImage: "icons/health-log.png",
-    description: "A private daily health journal for weight, food, habits and workouts, with zero setup.",
+    description: "A private daily health journal.",
     url: "https://apps.apple.com/us/app/simple-health-log-app/id6811933427",
     linkLabel: "Get the App"
   },
   {
     name: "Challenge Accepted",
     iconImage: "icons/challenge-accepted.png",
-    description: "Three new challenges every day, made to push you outside your routine. Build a streak and level up.",
+    description: "Three new challenges every day.",
     url: "https://apps.apple.com/us/app/challenge-accepted-3-daily/id6805973885",
     linkLabel: "Get the App"
   },
   {
     name: "One More Question",
     iconImage: "icons/one-more-question.png",
-    description: "A conversation starter for groups, families, couples and friends. Tap through 15+ decks of questions, or write your own, all offline.",
+    description: "Conversation starters for any group.",
     url: "https://apps.apple.com/us/app/one-more-question/id6816315190",
     linkLabel: "Get the App"
   },
   {
     name: "BBC110",
     iconImage: "icons/bbc110.png",
-    description: "Design a screen, hit Publish, and show it on any TV or projector.",
+    description: "Design a screen and show it on any TV.",
     url: "https://ckopp22.github.io/BBC110/",
     linkLabel: "Open"
   },
   {
     name: "Brain Freeze",
     iconImage: "icons/brain-freeze.png",
-    description: "A party game show about things you should know, but your brain just froze.",
+    description: "A party game show for things you should know.",
     url: "https://ckopp22.github.io/Brain-Freeze/",
     linkLabel: "Play Now"
   },
   {
     name: "Worship Tiles",
     iconImage: "icons/worship-tiles.png",
-    description: "A rhythm tile game: tap in time with the notes, chase high scores, and unlock new songs.",
+    description: "A rhythm tile game with new songs to unlock.",
     url: "https://ckopp22.github.io/Worship-Tiles/",
     linkLabel: "Play Now"
   }
