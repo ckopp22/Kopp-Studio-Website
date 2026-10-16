@@ -18,7 +18,7 @@ const apps = [
   {
     name: "Turtle Tides",
     iconImage: "icons/turtle-tides.png",
-    description: "Guide a little sea turtle on an adventure. (Created by Wesley)",
+    description: "Wesley's sea turtle on an adventure.",
     url: "https://ckopp22.github.io/Turtle-Tides/",
     linkLabel: "Play Now"
   },
@@ -81,14 +81,14 @@ const apps = [
   {
     name: "Brain Freeze",
     iconImage: "icons/brain-freeze.png",
-    description: "A party game show for things you should know.",
+    description: "A party game show for trivia.",
     url: "https://ckopp22.github.io/Brain-Freeze/",
     linkLabel: "Play Now"
   },
   {
     name: "Worship Tiles",
     iconImage: "icons/worship-tiles.png",
-    description: "A rhythm tile game with new songs to unlock.",
+    description: "A rhythm tile game.",
     url: "https://ckopp22.github.io/Worship-Tiles/",
     linkLabel: "Play Now"
   }

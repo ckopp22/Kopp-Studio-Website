@@ -149,6 +149,7 @@ main {
   display: flex;
   align-items: center;
   gap: 1rem;
+  min-height: 6.5rem;
   position: relative;
   isolation: isolate;
   overflow: hidden;
