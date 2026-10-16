@@ -91,6 +91,13 @@ const apps = [
     description: "A rhythm tile game.",
     url: "https://ckopp22.github.io/Worship-Tiles/",
     linkLabel: "Play Now"
+  },
+  {
+    name: "Sneaky",
+    iconImage: "icons/sneaky.png",
+    description: "A stealth game. Sneak past the guards.",
+    url: "https://ckopp22.github.io/Sneaky/",
+    linkLabel: "Play Now"
   }
 ];
 
