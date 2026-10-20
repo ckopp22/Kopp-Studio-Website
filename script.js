@@ -98,6 +98,13 @@ const apps = [
     description: "A stealth game. Sneak past the guards.",
     url: "https://ckopp22.github.io/Sneaky/",
     linkLabel: "Play Now"
+  },
+  {
+    name: "Convert",
+    iconImage: "icons/convert.png",
+    description: "A cute kg to lb and °C to °F converter.",
+    url: "https://ckopp22.github.io/Convert/",
+    linkLabel: "Open"
   }
 ];
 
