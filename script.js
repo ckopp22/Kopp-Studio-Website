@@ -105,6 +105,13 @@ const apps = [
     description: "A cute kg to lb and °C to °F converter.",
     url: "https://ckopp22.github.io/Convert/",
     linkLabel: "Open"
+  },
+  {
+    name: "Farm Run",
+    iconImage: "icons/farm-run.png",
+    description: "Become a millionaire farmer.",
+    url: "https://ckopp22.github.io/FarmRun/",
+    linkLabel: "Play Now"
   }
 ];
 
