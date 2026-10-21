@@ -112,6 +112,13 @@ const apps = [
     description: "Become a millionaire farmer.",
     url: "https://ckopp22.github.io/FarmRun/",
     linkLabel: "Play Now"
+  },
+  {
+    name: "Simply Racing",
+    iconImage: "icons/simply-racing.png",
+    description: "A simple, fast racing game.",
+    url: "https://ckopp22.github.io/SimpleRacing/",
+    linkLabel: "Play Now"
   }
 ];
 
