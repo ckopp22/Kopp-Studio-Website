@@ -119,6 +119,13 @@ const apps = [
     description: "A simple, fast racing game.",
     url: "https://ckopp22.github.io/SimpleRacing/",
     linkLabel: "Play Now"
+  },
+  {
+    name: "Go, Go, Go",
+    iconImage: "icons/go-go-go.png",
+    description: "Swipe to dodge everything in your way.",
+    url: "https://ckopp22.github.io/Go/",
+    linkLabel: "Play Now"
   }
 ];
 
