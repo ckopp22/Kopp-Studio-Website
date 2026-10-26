@@ -76,6 +76,13 @@ body {
   letter-spacing: -0.02em;
 }
 
+.site-header .logo {
+  display: block;
+  margin: 0 auto;
+  width: min(86vw, 30rem);
+  height: auto;
+}
+
 .tagline {
   margin: 0.5rem 0 0;
   font-size: 1.125rem;
