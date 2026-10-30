@@ -126,6 +126,13 @@ const apps = [
     description: "Swipe to dodge everything in your way.",
     url: "https://ckopp22.github.io/Go/",
     linkLabel: "Play Now"
+  },
+  {
+    name: "Drive Thru",
+    iconImage: "icons/drive-thru.png",
+    description: "Serve every car at the drive-thru.",
+    url: "https://ckopp22.github.io/Drive-Thru/",
+    linkLabel: "Play Now"
   }
 ];
 
