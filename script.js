@@ -135,6 +135,13 @@ const apps = [
     description: "Serve every car at the drive-thru.",
     url: "https://ckopp22.github.io/Drive-Thru/",
     linkLabel: "Play Now"
+  },
+  {
+    name: "Step on the Farm",
+    iconImage: "icons/step-on-the-farm.png",
+    description: "Turn your daily walk into a farm of your own.",
+    url: "https://apps.apple.com/us/app/step-on-the-farm/id6828305367",
+    linkLabel: "Get the App"
   }
 ];
 
