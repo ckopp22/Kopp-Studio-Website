@@ -6,6 +6,7 @@
 //   iconImage   Optional path to a PNG, e.g. "icons/my-app.png". Overrides `icon`.
 //   description One or two sentences
 //   url         App Store / Play Store / web game URL. Use "#" for "not available yet".
+//   appStoreUrl Optional. If set, clicking the card opens an App / Web choice modal.
 //   linkLabel   Button text, e.g. "Play Now", "Get the App"
 const apps = [
   {
@@ -20,6 +21,7 @@ const apps = [
     iconImage: "icons/turtle-tides.png",
     description: "Wesley's sea turtle on an adventure.",
     url: "https://ckopp22.github.io/Turtle-Tides/",
+    appStoreUrl: "https://apps.apple.com/us/app/turtle-tides-island-adventure/id6822570048",
     linkLabel: "Play Now"
   },
   {
@@ -145,6 +147,12 @@ function createCard(app) {
     card.target = "_blank";
     card.rel = "noopener noreferrer";
     card.setAttribute("aria-label", (app.linkLabel || "Open") + " " + app.name);
+    if (app.appStoreUrl) {
+      card.addEventListener("click", e => {
+        e.preventDefault();
+        openChoice(app);
+      });
+    }
   }
 
   const icon = document.createElement("div");
@@ -184,6 +192,40 @@ function createCard(app) {
 
   card.append(icon, body, btn);
   return card;
+}
+
+let choiceModal;
+
+function openChoice(app) {
+  if (!choiceModal) {
+    choiceModal = document.createElement("div");
+    choiceModal.className = "modal";
+    choiceModal.hidden = true;
+    choiceModal.innerHTML =
+      '<div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">' +
+      '<button class="modal-close" aria-label="Close">\u00d7</button>' +
+      '<img class="modal-icon" alt="">' +
+      '<h2 id="modal-title" class="modal-title"></h2>' +
+      '<p class="modal-sub">How do you want to play?</p>' +
+      '<div class="modal-actions">' +
+      '<a class="btn modal-app" target="_blank" rel="noopener noreferrer">App</a>' +
+      '<a class="btn modal-web" target="_blank" rel="noopener noreferrer">Web</a>' +
+      '</div></div>';
+    document.body.appendChild(choiceModal);
+    const close = () => { choiceModal.hidden = true; };
+    choiceModal.addEventListener("click", e => {
+      if (e.target === choiceModal || e.target.closest(".modal-close") || e.target.closest(".modal-actions a")) close();
+    });
+    document.addEventListener("keydown", e => { if (e.key === "Escape") close(); });
+  }
+  const icon = choiceModal.querySelector(".modal-icon");
+  icon.src = app.iconImage || "";
+  icon.hidden = !app.iconImage;
+  choiceModal.querySelector(".modal-title").textContent = app.name;
+  choiceModal.querySelector(".modal-app").href = app.appStoreUrl;
+  choiceModal.querySelector(".modal-web").href = app.url;
+  choiceModal.hidden = false;
+  choiceModal.querySelector(".modal-app").focus();
 }
 
 const ORDER_KEY = "app-order";
