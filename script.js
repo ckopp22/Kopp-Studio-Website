@@ -113,6 +113,7 @@ const apps = [
     iconImage: "icons/farm-run.png",
     description: "Become a millionaire farmer.",
     url: "https://ckopp22.github.io/FarmRun/",
+    appStoreUrl: "https://apps.apple.com/us/app/farm-run-fun/id6829609989",
     linkLabel: "Play Now"
   },
   {
