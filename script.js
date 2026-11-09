@@ -143,6 +143,13 @@ const apps = [
     description: "Turn your daily walk into a farm of your own.",
     url: "https://apps.apple.com/us/app/step-on-the-farm/id6828305367",
     linkLabel: "Get the App"
+  },
+  {
+    name: "Snowball",
+    iconImage: "icons/snowball.png",
+    description: "Roll your snowball and keep it going.",
+    url: "https://ckopp22.github.io/snowball/",
+    linkLabel: "Play Now"
   }
 ];
 
