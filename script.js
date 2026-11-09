@@ -147,7 +147,7 @@ const apps = [
   {
     name: "Snowball",
     iconImage: "icons/snowball.png",
-    description: "Roll your snowball and keep it going.",
+    description: "Survive waves of enemies with just snowballs!",
     url: "https://ckopp22.github.io/snowball/",
     linkLabel: "Play Now"
   }
